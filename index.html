@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>My Web Page</title>
+ <style>
+  body {
+   background-color: #eee;
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+  }
+
+  p {
+   color: #666;
+   font-size: 18px;
+   line-height: 1.5;
+   margin: 20px 0;
+  }
+
+  a {
+   color: #0000FF;
+   font-weight: bold;
+   text-decoration: none;
+  }
+
+  button {
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 10px 20px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 25px;
+   box-shadow: 0 6px #999;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+   border-radius: 5px;
+   border: 1px solid #ccc;
+   padding: 10px;
+   font-size: 16px;
+   margin-bottom: 20px;
+   width: 100%;
+  }
+
+  .header {
+   background-color: #fff;
+   box-shadow: 0 6px #999;
+   margin-bottom: 20px;
+   padding: 20px;
+  }
+
+  .menu {
+   background-color: #333;
+   color: #fff;
+   padding: 10px;
+  }
+
+  .menu ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+  }
+
+  .menu li {
+   margin-right: 20px;
+  }
+
+  .menu a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+  }
+
+  .h2{
+    color: #bbaaaa;
+   font-size: 36px;
+   margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center,justify;
+    word-break: break-all;
+    word-wrap: break-word;
+    text-shadow: 1px 2px 2px 2px #4CAF50;
+  }
+
+  .container {
+   width: 80%;
+   margin: auto;
+  }
+
+  .row {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 20px 0;
+   height: 400px;
+   width: 1100px;
+  }
+
+  .column {
+   flex: 1;
+   margin: 0 10px;
+  }
+
+  .column img {
+   width: 100%;
+   height: auto;
+  }
+
+  .dis-hov {
+        display: flex;
+        width: 100px;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        min-width: 90;
+      }
+      /* the beauti of the list comes from this CSS section so let's see it margin:0 because i don't want distance to be far
+      seting the font(family), display: inline-flex so it will take bothe the inline and flex CSS behavour so it will be good
+      to set it in this type of situation 
+      */
+      .dis-h li {
+        margin: 0;
+        font-family: sans-serif;
+        font-size: 15px;
+        display: inline-flex;
+        align-items: center;
+        border: 2px solid;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 90px;
+        background-color: #545b5e;
+        color: white;
+      }
+/* in this section sameold sameold there is nothing new that i should explain */
+      .dis-h li:hover {
+        transform: translate(-3px, -3px);
+        transition: 0.2s ease-in-out;
+        border-radius: 5px;
+        background-color: rgb(49, 49, 199);
+        color: white;
+      }
+
+      .menu .dis-h {
+        display: none;
+      }
+
+     .menu .dis-hov:hover .dis-h {
+        cursor: pointer;
+        display: inline-block;
+      }
+
+  .footer {
+   background-color: #eee;
+   padding: 20px;
+   text-align: center;
+   color: #666;
+   font-size: 14px;
+  }
+ </style>
+</head>
+<body>
+ <header class="header">
+  <h1>My Web Page</h1>
+ </header>
+
+ <nav class="menu">
+  <ul>
+   <li><a href="#">Home</a></li>
+   <li><a href="#">Recent</a></li>
+   <li><a href="#">Popular</a></li>
+   <span class="dis-hov">  <li><a href="#" class="hov">Year</a>
+    <ul class="dis-h">
+      <li>2023</li>
+      <li>2022</li>
+      <li>2021</li>
+      <li>2020</li>
+      <li>2019</li>
+      <li>2018</li>
+      <li>2017</li>
+      <li>2016</li>
+      <li>2015</li>
+      <li>2014</li>
+      <li>2013</li>
+      <li>2012</li>
+      <li>2011</li>
+      <li>2010</li>
+      <li>2009</li>
+      <li>2008</li>
+      <li>2007</li>
+      <li>2006</li>
+      <li>2005</li>
+      <li>2004</li>
+      <li>2003</li>
+      <li>2002</li>
+    </ul>
+  </li>
+</span>
+  </ul>
+ </nav>
+
+ <div class="container">
+  <div class="row">
+   <div class="column">
+    <img src="./imge/AAAABasKQH0o1f6-KoE6rs_fTGzUj1nV1YrlGJrkEccGdR6PaTIb3iyiSEX3bzwvXAXSV0GbDAqkV66NuFoSIqIbPv6VTOqX2hFU6RY.jpg" alt="">
+    <h2>The Unholy</h2>
+   </div>
+   <div class="column">
+    <img src="./imge/AAAABbZhc1jleHmsZQ1jlPx1liF7-WCsEe9Jaxrz-htC8lwVc3xteRuOXxw383SWhYbQRqxIUAYDR76wiXdKRVUc57oc0exeJJu1VlY.jpg" alt="">
+    <h2>Chainese Zodiac</h2>
+   </div>
+   <div class="column">
+    <img src="./imge/AAAABd7yGfxi5Z3Hlv3TMOq4MzZFmtsdviv1FUDWEi-1AJ1bcsnTM56uG8u3OhN62WjEqYXlnaUuIEMkLytDXSnreO-G2PCqzC8pQv54SMLtp26y-zqJjSPxW1jFBXVTGas0lcX7.jpg" alt="">
+    <h2>The Magician's Elephant</h2>
+   </div>
+   <div class="column">
+    <img src="./imge/AAAABdaniOAip8dFPgWzioZGw9l-kV5GagL6k_5YLzkflv2nwkDjn8KQv_-N5fSKjtPC4lccLagP14d8Y8DzO_K9vsaLTp_vygVdx-U.jpg" alt="">
+    <h2>Bat Watch</h2>
+   </div>
+   <div class="column">
+    <img src="./imge/AAAABdVozig2u8iR0NKqtv2lR888eLN6X8Exwx0wUT1zMMYAuRqc5x3oBq63k5SfbNvwnDRKBUhx-e21qjVNRlCu7lmAZpKIr15QARY.jpg" alt="">
+    <h2>Morbius</h2>
+   </div>
+   <div class="column">
+    <img src="./imge/AAAABeX2MsjOq61GYA9PPSKbibtiljYlSvJ9rr87rhM3cfMZGteKVmcREuIj4-rgoZrBbywtPMD0Sx8_Qv5aaLjFro4Z6k-2SMDDEgI.jpg" alt="">
+    <h2>Bahubali</h2>
+   </div>
+   <div class="column">
+    <img src="./imge/AAAABfGia1PcZlwTpXqGmcAHzhTQykdU2MVuECyuVlYKKC884mwyM41IMn-2k6cDXyAI-dtEb7D1bVTjfcBIXONl5pSmkXL8-0NKj2P0VZZJqI67LyH4ZyemHMaIWQ_nWGodqnAN.jpg" alt="">
+    <h2>Loving Adult</h2>
+   </div>
+   <div class="column">
+    <img src="./imge/AAAABfqhDWYNF2eKa2_CuDizwPeLkGJsMm0DeKriHHy5KxJumb8WmU-0GOcFQXK4b8EmiNqghYtkGFjB-a8lk2trFBX-OvsysY0hI_A.jpg" alt="">
+    <h2>12 Strong</h2>
+   </div>
+   <div class="column">
+    <img src="./imge/AAAABfqjdunnK3kaD4AoC436F8QpOyKET6_SuZVxE9omPfvoyhFYmBjr2lgyBes-3_i3f7a119Vd3PQLsF_pevhZOirNzPk3zbzftZ0.jpg" alt="">
+    <h2>Seed Of Chucky</h2>
+   </div>
+   <div class="column">
+    <img src="./imge/AAAABSL_MHQrKLyLxwn7QCaCvIxMIzMui9F7gAamoT3TYdE4tr9EeOK7xO3zsM9b28UOEeYsQgzOy3DHrvkXrPu_SRpXcCTVsHutZhw.jpg" alt="">
+    <h2>Sniper Assassins End</h2>
+   </div>
+   <div class="column">
+    <img src="./imge/AAAABSLPVz352-RTwdUHmERXPE9jYP6sk_wTg7m92c2h_s-sV33VMT67yLQXJek9O2xdk7HJObneJoZYhgDakDfo6nv8CtZ_0RHbkls.jpg" alt="">
+    <h2>Spider Man: Into The Spider-Verse</h2>
+   </div>
+  </div>
+
+  <form>
+   <label for="name">Name:</label>
+   <input type="text" id="name" name="name" required>
+
+   <label for="email">Email:</label>
+   <input type="email" id="email" name="email" required>
+
+   <label for="message">Message:</label>
+   <textarea name="message" id="message" rows="5" required></textarea>
+
+   <button type="submit">Send</button>
+  </form>
+ </div>
+ 
+ <footer class="footer">
+  <p>&copy; 2021 My Web Page</p>
+ </footer>
+</body>
+</html>
+
+<!--
+                             (~^--^~) XHTML
+  XHTML ( EXtensible HyperText Markup Language), developed by World Wide Consortium 
+  (W3C) in 2000, is the more extended version of the popular HTML. It is the same 
+  HTML but defined as an XML application, which combines the advantages of both HTML and XML.
+  XHTML retains all the features of HTML but introduced more strict rules for creating pages, 
+  which allows you to make sites independent of the display device and browser.
+                 (~^--^~) Difference between HTML and XHTML
+ 1, You should always use <!DOCTYPE ....>
+An XHTML document must include an XHTML Doctype Declaration. 
+Other required elements are the <html>, <head>, <title>, and <body> tags.
+  (~^--^~)Example of XHTML Document With Required Elements:
+==>  <!DOCTYPE html PUBLIC>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Title of the document</title>
+  </head>
+  <body>
+    Content of the page
+  </body>
+</html>
+<!--
+<!-- <var> 2, You should insert XHTML elements properly. In an XHTML document, you cannot nest elements improperly. 
+  (~^--^~) It should look like this:
+==> <strong>
+ <em>This text is bold and italic</strong>
+</em>
+3, Unlike HTML, where we can sometimes omit the closing tag, 
+ (~^--^~) in XHTML the closing tag is required always and everywhere:
+ ==> A break: <br/>
+==> A horizontal rule: 
+<hr/>
+==> An image: <img src="smile.gif" alt="Always smile" />
+4, Lowercase and uppercase tags are distinguished in XHTML. To avoid confusion, all tags, 
+ (~^--^~) as well as their attributes must be typed in lowercase:
+==> <body>
+  <p>Some paragraph</p>
+</body></var> 
+<!-- <var> 5, You must write XHTML attributes in lower case,
+ (~^--^~)  like this:
+==> <table width="100%">
+6, You must put the attribute values in quotes, 
+ (~^--^~) like this:
+==> <table width="100%">
+7, You cannot minimize attributes. The abbreviated attribute is not assigned a value. An attribute can be assigned an attribute value that matches the name. 
+ (~^--^~)  It shouldn’t look like this:
+==> <input type="checkbox" name="flower" value="rose" checked />
+==> (~^--^~)  Instead, it must look like this:
+
+==> <input type="checkbox" name="flower" value="rose" checked="checked" />
+8,Instead of the name attribute you’ve better use id. In XHTML the name is partially obsolete,
+ that’s why it’s recommended to use id attribute.
+                            (~^--^~) Benefits of XHTML
+The fact that in XHTML all tags must be closed and nested correctly makes the code look much cleaner.
+XHTML uses less bandwidth, which reduces cost especially if your site has thousands of pages.
+Thanks to being well-formed, XHTML documents are easily transported to wireless devices, 
+Braille readers and other specialized web environments.
+XHTML works with CSS to create web pages easily.
+-->
+<!--
+                     (~^--^~) Origin of HTML
+  The concept of HTML came to the mind of Sir Tim Berners-Lee when he saw 
+  researchers at CERN need to share documents many times. And then, he proposed
+   that he develop a markup language that would help connect computers worldwide.
+    According to this idea, the ordinary user can access the file of one computer from
+     another computing device by accessing the markup language he proposed. 
+     Hypertext system refers to the set or the network of documents written in text and
+      connected using hyperlinks. And using this, the researchers could jump to other files
+       just by clicking on hyperlinks.
+      (~^--^~) Evolution of HTML Versions
+                     (~^--^~)  HTML 1.0
+It was the same version of HTML and was used till 1994. However, it has minimal
+ features and functionality because users can only use twenty elements. 
+ There was not much use of it, and also, at that time, a few people were involved in web development.
+
+                       (~^--^~) HTML 2.0
+It was the second version of HTML and became the standard language until HTML
+ 3.2 came. Using this language, the user can change the background color, 
+ text color, and other formatting. It was a significant improvement in HTML 1.0
+  that came in 1995. It was also when W3C was established to make the standards for websites.
+                     (~^--^~)  HTML 3
+At this time, most of the users got friendly with HTML and started using it. Hence,
+ it was the time when the dependency on HTML was increasing. And some of them started
+  willing to increase the look of their web pages. Hence, the HTML authors added 
+  new features and attributes in this version of HTML.
+
+                    (~^--^~) HTML 3.2
+During this time, many HTML tags were coming to make the website more attractive and functional.
+And W3C was also trying to make the HTML more potent than previous versions. And with these
+ additional attributes and features, HTML 3.2 was endorsed by W3C. By 1997, HTML 3.2 became
+  the standard markup language for web-based applications.
+                   (~^--^~) HTML 4.01
+HTML 4.01 is one of the significant HTML versions in the history of HTML. Because it was
+ the most extensively used markup language at that time. It was launched in 1999 and 
+ has CSS or cascading style sheets to add visual effects to web pages. Along with this, 
+ many other advanced features were not in previous versions of it. Hence, because of these 
+ additional features, it was a more trouble-free version of HTML.
+                   (~^--^~)  HTML 5
+HTML 5 is the latest and current version of HTML with lots of attributes and functionalities.
+ It works even if you are not connected with the internet and can be used for web-based applications.
+  The great thing about HTML 5 is that it is supported by most web browsers, including Chrome,
+   Firefox, Opera, and other browsers.
+
+Also, now CSS has developed, and modern browsers also support HTML5. Hence, it has become 
+easy to define a website and its elements excellently in the minimal issue.
+                 (~^--^~) Future of HTML
+HTML has covered a long journey from a simple concept of file sharing to defining web elements. 
+It has become a crucial thing to learn and use while building web pages and applications. Currently, 
+HTML5 is the latest version that is supported by most browsers. And in the future, we can see an
+ updated version of HTML5 again by W3C with additional features. Hence, the use of HTML will continue,
+  and developers will use it a lot to define their website and its pages inaccurately.
